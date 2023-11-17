@@ -1,0 +1,243 @@
+[
+    {
+      "id": 1,
+      "title": "Samsung Galaxy S21",
+      "price": 899.99,
+      "description": "Smartphone con pantalla AMOLED de 6.2 pulgadas, cámara triple de 64 MP y rendimiento excepcional.",
+      "category": "celulares",
+      "image": "https://m.media-amazon.com/images/I/61jYjeuNUnL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "LG OLED TV 65C1",
+      "price": 1999.99,
+      "description": "Televisor OLED de 65 pulgadas con resolución 4K, Dolby Vision y sonido Dolby Atmos.",
+      "category": "televisores",
+      "image": "https://www.lg.com/cac/images/televisores/md07528468/gallery/OLED65C1PUB-1100x730.jpg"
+    },
+    {
+      "id": 3,
+      "title": "PlayStation 5",
+      "price": 499.99,
+      "description": "Consola de videojuegos de última generación con hardware de alta gama y capacidad para juegos en 4K.",
+      "category": "consolas",
+      "image": "https://jumboargentina.vtexassets.com/arquivos/ids/788282/Consola-Ps5-Playstation-Hw-Standard-2-974113.jpg?v=638252265640170000"
+    },
+    {
+      "id": 4,
+      "title": "MacBook Pro M1",
+      "price": 1499.99,
+      "description": "Laptop con chip M1 de Apple, pantalla Retina de 13 pulgadas y hasta 16 GB de RAM.",
+      "category": "notebooks",
+      "image": "https://www.macstation.com.ar/img/productos/2922-2846-2620-1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "iPhone 13",
+      "price": 1099.99,
+      "description": "Último modelo de iPhone con pantalla Super Retina XDR, A15 Bionic y sistema de doble cámara.",
+      "category": "celulares",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_973345-MLA47781591382_102021-O.webp"
+    },
+    {
+      "id": 6,
+      "title": "Sony Bravia XR A90J",
+      "price": 2999.99,
+      "description": "Televisor OLED 4K con procesador XR, sonido Acoustic Surface Audio+ y Google TV integrado.",
+      "category": "televisores",
+      "image": "https://i.blogs.es/b862fa/sony-a90j/original.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Xbox Series X",
+      "price": 549.99,
+      "description": "Consola de juegos con arquitectura de última generación, capacidad para 4K y compatibilidad con ray tracing.",
+      "category": "consolas",
+      "image": "https://images.start.com.ar/RRT-00002GPUL1M-2.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Dell XPS 13",
+      "price": 1299.99,
+      "description": "Laptop ultradelgada con procesador Intel Core i7, pantalla InfinityEdge y almacenamiento SSD.",
+      "category": "notebooks",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9320/media-gallery/xs9320nt-xnb-shot-5-2-gy.psd?fmt=pjpg&pscan=auto&scl=1&wid=3947&hei=3186&qlt=100,1&resMode=sharp2&size=3947,3186&chrss=full&imwidth=5000"
+    },
+    {
+      "id": 9,
+      "title": "OnePlus 9",
+      "price": 799.99,
+      "description": "Smartphone con pantalla Fluid AMOLED de 6.55 pulgadas, cámara Hasselblad y carga rápida de 65W.",
+      "category": "celulares",
+      "image": "https://www.undertec.store/wp-content/uploads/2021/04/oneplus-9-pro-undertaker-tec-store-4.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Samsung QLED QN90A",
+      "price": 1799.99,
+      "description": "Televisor QLED 4K de 75 pulgadas con tecnología Quantum Dot, procesador Neo Quantum y sonido Object Tracking Sound+.",
+      "category": "televisores",
+      "image": "https://www.manual.ar/thumbs/products/l/1427780-samsung-qn90a.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Nintendo Switch OLED",
+      "price": 349.99,
+      "description": "Consola híbrida con pantalla OLED de 7 pulgadas, modos de juego versátiles y controles Joy-Con.",
+      "category": "consolas",
+      "image": "https://http2.mlstatic.com/D_Q_NP_803086-MLA47920649105_102021-O.webp"
+    },
+    {
+      "id": 12,
+      "title": "HP Spectre x360",
+      "price": 1399.99,
+      "description": "Laptop convertible con pantalla táctil 4K, procesador Intel Core i7 y diseño delgado de aluminio.",
+      "category": "notebooks",
+      "image": "https://kaas.hpcloud.hp.com/PROD/v2/renderbinary/6489793/6489864/con-win-nb-p-dashiell-22c1-hp-spectre-x360-convertible-laptop-14-ef0000-specification/con-nb-dashiell-22c1-omen-14-ef0000-product-image"
+    },
+    {
+      "id": 13,
+      "title": "Google Pixel 6",
+      "price": 699.99,
+      "description": "Smartphone con cámara Tensor, pantalla de 120 Hz y Google Tensor SoC para un rendimiento potente.",
+      "category": "celulares",
+      "image": "https://m.media-amazon.com/images/I/61oQtjPpM-L._AC_SL1500_.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Sony X900H",
+      "price": 1299.99,
+      "description": "Televisor LED 4K con procesador X1 4K HDR, retroiluminación Full Array y Android TV integrado.",
+      "category": "televisores",
+      "image": "https://www.sony.com.ar/image/0d3b7fda823305ae524bac72fcb4b5cb?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF"
+    },
+    {
+      "id": 15,
+      "title": "Xbox Series S",
+      "price": 299.99,
+      "description": "Consola compacta con rendimiento sólido para juegos en resolución 1440p y compatibilidad con Xbox Game Pass.",
+      "category": "consolas",
+      "image": "https://images.start.com.ar/RRS-00002.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Asus ROG Zephyrus G14",
+      "price": 1499.99,
+      "description": "Laptop para juegos con procesador AMD Ryzen 9, GPU NVIDIA RTX 3060 y pantalla QHD de 14 pulgadas.",
+      "category": "notebooks",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_977369-MLU72575477184_112023-O.webp"
+    },
+    {
+      "id": 17,
+      "title": "iPhone SE (2022)",
+      "price": 499.99,
+      "description": "Versión actualizada del iPhone SE con chip A15 Bionic, cámara avanzada y diseño clásico.",
+      "category": "celulares",
+      "image": "https://www.macstation.com.ar/img/productos/2873-mmxj3le-a-iphone-se-128gb-midnight-medianoche.jpg"
+    },
+    {
+      "id": 18,
+      "title": "LG NanoCell 85",
+      "price": 1199.99,
+      "description": "Televisor NanoCell 4K de 65 pulgadas con tecnología NanoCell, procesador α7 Gen4 y Dolby Vision IQ.",
+      "category": "televisores",
+      "image": "https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/8eb0bf21-b451-4044-86ca-83aa459e37b9/md07515695-zoom-01-jpg"
+    },
+    {
+      "id": 19,
+      "title": "Nintendo Switch Lite",
+      "price": 199.99,
+      "description": "Consola portátil diseñada para juegos en modo portátil, con controles integrados y colores vibrantes.",
+      "category": "consolas",
+      "image": "https://images-cdn.ubuy.ae/64259cebcd5ef12122228ff5-nintendo-switch-lite-dialga-palkia.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Dell Inspiron 14",
+      "price": 899.99,
+      "description": "Laptop asequible con procesador Intel Core i5, pantalla Full HD y almacenamiento SSD de 512 GB.",
+      "category": "notebooks",
+      "image": "https://images.fravega.com/f300/0ef8a4b809da640e9d8f60af986df733.jpg.webp"
+    },
+    {
+      "id": 21,
+      "title": "OnePlus Nord 2",
+      "price": 499.99,
+      "description": "Smartphone con pantalla Fluid AMOLED de 6.43 pulgadas, cámara triple y carga rápida de 65W.",
+      "category": "celulares",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_615331-MLA72432437819_102023-O.webp"
+    },
+    {
+      "id": 22,
+      "title": "Sony A80J OLED",
+      "price": 2499.99,
+      "description": "Televisor OLED 4K con procesador Cognitive XR, sonido Acoustic Surface Audio+ y Google TV integrado.",
+      "category": "televisores",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_753012-MLA48712335996_122021-O.webp"
+    },
+    {
+      "id": 23,
+      "title": "PlayStation 4 Pro",
+      "price": 349.99,
+      "description": "Consola de juegos con gráficos mejorados, HDR y compatibilidad con una amplia biblioteca de juegos.",
+      "category": "consolas",
+      "image": "https://offlinetecnologia.com.ar/4412-large_default/00372.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Lenovo ThinkPad X1 Carbon",
+      "price": 1699.99,
+      "description": "Laptop empresarial ultradelgada con pantalla 4K, procesador Intel Core i7 y durabilidad militar.",
+      "category": "notebooks",
+      "image": "https://www.lenovo.com/medias/ThinkPad-X1-Carbon-Laptop-PC-Front-View-2-gallery-845x475.jpg?context=bWFzdGVyfGltYWdlc3wxMTE5MTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDUyL2hkMy85NDY4OTUwOTcwMzk4LmpwZ3xlNDcwOGE3MTVmMzIzYzQ0MmQ0NjIyNzllZmUxZGZkYzE0NzZiNGY1NDQ1YjRhOWNiN2MzNTdkNzU3MzdmYmIz"
+    },
+    {
+      "id": 25,
+      "title": "Google Pixel 5a",
+      "price": 449.99,
+      "description": "Smartphone con cámara de doble píxel, pantalla OLED de 6.34 pulgadas y resistencia al agua y al polvo.",
+      "category": "celulares",
+      "image": "https://http2.mlstatic.com/D_Q_NP_880546-MLA48184329764_112021-O.webp"
+    },
+    {
+      "id": 26,
+      "title": "Samsung QN800A Neo QLED",
+      "price": 2999.99,
+      "description": "Televisor Neo QLED 8K de 75 pulgadas con Quantum Mini LED, procesador Neo Quantum y sonido Object Tracking Sound+.",
+      "category": "televisores",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_741096-MLU71000502318_082023-O.webp"
+    },
+    {
+      "id": 27,
+      "title": "Nintendo 3DS XL",
+      "price": 199.99,
+      "description": "Consola portátil 3D con pantalla XL, cámara 3D y compatibilidad con una amplia variedad de juegos.",
+      "category": "consolas",
+      "image": "https://m.media-amazon.com/images/I/51G31RN-ZwL.jpg"
+    },
+    {
+      "id": 28,
+      "title": "Acer Predator Helios 300",
+      "price": 1199.99,
+      "description": "Laptop para juegos con pantalla IPS de 144 Hz, GPU NVIDIA RTX 3060 y sistema de refrigeración avanzado.",
+      "category": "notebooks",
+      "image": "https://tytnotebooks.com.ar/wp-content/uploads/2021/09/71kY0r7RD5S._AC_SL1500_-1.jpg"
+    },
+    {
+      "id": 29,
+      "title": "iPhone 12 Mini",
+      "price": 699.99,
+      "description": "Versión compacta del iPhone 12 con pantalla Super Retina XDR, chip A14 Bionic y cámara dual avanzada.",
+      "category": "celulares",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_937664-MLA46105442498_052021-O.webp"
+    },
+    {
+      "id": 30,
+      "title": "Sony X950H",
+      "price": 1599.99,
+      "description": "Televisor LED 4K con retroiluminación Full Array, procesador X1 Ultimate y sonido Dolby Atmos.",
+      "category": "televisores",
+      "image": "https://cdn.cs.1worldsync.com/syndication/mediaserverredirect/6eead0d1f9b7db94d1a2f9809750ef58/maxsize(800x800).jpg"
+    }
+  ]
+  

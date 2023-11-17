@@ -1,15 +1,14 @@
 .navbar {
     list-style: none;
     padding: 0;
+    display: flex;
 
   }
   
-  .navbar li {
-    margin: 25px;
-    display: inline;
-  }
-  
+
   .navbar-button {
+    margin: 15px;
+    display: inline;
     border: 1px solid black;
     color: black;
     border-radius: 3px;

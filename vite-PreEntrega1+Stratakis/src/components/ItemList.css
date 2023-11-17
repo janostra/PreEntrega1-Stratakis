@@ -1,0 +1,6 @@
+.itemcontainer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    justify-content:space-around;
+
+}

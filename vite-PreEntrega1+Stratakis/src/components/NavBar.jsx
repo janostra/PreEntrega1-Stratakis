@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css'
 
 function Navbar() {
@@ -6,10 +7,11 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <ul>
-          <li><button className="navbar-button" href="#">Celulares</button></li>
-          <li><button className="navbar-button" href="#">Televisores</button></li>
-          <li><button className="navbar-button" href="#">Consolas</button></li>
-          <li><button className="navbar-button" href="#">Notebooks</button></li>
+          <NavLink className="navbar-button" to="/">Todos</NavLink>
+          <NavLink className="navbar-button" to="/category/celulares">Celulares</NavLink>
+          <NavLink className="navbar-button" to="/category/televisores">Televisores</NavLink>
+          <NavLink className="navbar-button" to="/category/consolas">Consolas</NavLink>
+          <NavLink className="navbar-button" to="/category/notebooks">Notebooks</NavLink>
         </ul>
       </nav>
       
