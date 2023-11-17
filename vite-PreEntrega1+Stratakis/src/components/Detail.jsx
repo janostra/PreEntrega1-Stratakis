@@ -13,11 +13,11 @@ const Detail = ({ producto, onClose, setTotalQuantity }) => {
       <div className="popup-inner">
         <h2>{producto.title}</h2>
         <img className='img' src={producto.image} alt={producto.title} />
-        <p>Precio: ${producto.price}</p>
+        <p>Precio:${producto.price}</p>
         <p>{producto.description}</p>
         <div>
-            <h2>Seleccione la cantidad de productos:</h2>
-            <h3>{count}</h3>
+            <h3>Seleccione la cantidad de productos:</h3>
+            <h4>{count}</h4>
             <button className="button" onClick={() => setCount(count + 1)}>+
              </button>
             <button className="button" onClick={() => setCount(count - 1)} disabled={count === 0}>-

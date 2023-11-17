@@ -36,14 +36,22 @@ function App() {
         <Routes>
           <Route
             path='/'
-            element={<ItemListContainer nombre="Ursu" setTotalQuantity={setTotalQuantity} />}
+            element={<ItemListContainer nombre="Jano" setTotalQuantity={setTotalQuantity} />}
           />
           <Route
             path='/category/:categoryId'
-            element={<ItemListContainer nombre="Ursu" setTotalQuantity={setTotalQuantity} />}
+            element={<ItemListContainer nombre="Jano" setTotalQuantity={setTotalQuantity} />}
           />
           <Route path='*' element={<Navigate to="/" />} />
         </Routes>
+        <footer className='footer'>
+      
+            <img className='logo-empresa-footer' src={LogoEmpresa} alt="Logo empresa"/>
+            <h4>JSTenology - derechos reservados</h4>
+          
+
+          
+        </footer>
       </>
     </Router>
   );
