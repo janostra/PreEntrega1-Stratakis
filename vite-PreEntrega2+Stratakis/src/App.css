@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+}
+
+#root {text-align: center;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ff0808;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 0.2em;
+}
+.button:hover {
+  border-color: #646cff;
+}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+header {
+  background-color: rgba(255, 0, 0, 0.559);
+  border-radius: 0px 0px 25px 25px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-top: 10px;
+}
+
+.barra-vertical {
+  border-left: 1px solid rgb(24, 24, 24);
+  height: 69px;
+}
+
+.logo-empresa {
+  height: 100px;
+  width: 100px;
+  margin: 0px;
+}
+
+.empresa {
+  display: flex;
+}
+
+.footer {
+  background-color: rgba(255, 0, 0, 0.559);
+  border-radius: 25px 25px 0px 0px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-empresa-footer {
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  margin-right: 20px;
+}

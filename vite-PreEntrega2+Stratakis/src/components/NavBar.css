@@ -1,0 +1,32 @@
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+  }
+  
+
+  .navbar-button {
+    margin: 15px;
+    display: inline;
+    border: 1px solid black;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1em; 
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #ff0808;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .navbar-button:hover {
+    transform: scale(1.2);
+  }
+
+  .navbar-button:focus {
+    outline: none; /* Evita el contorno del botón al hacer clic */
+  }
