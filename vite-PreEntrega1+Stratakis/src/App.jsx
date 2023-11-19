@@ -32,6 +32,7 @@ function App() {
           <div className="barra-vertical"></div>
           <CartWidget cantidad={totalquantity}/>
         </header>
+        
 
         <Routes>
           <Route
