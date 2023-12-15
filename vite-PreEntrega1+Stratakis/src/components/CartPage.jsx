@@ -1,15 +1,19 @@
-// CartPage.jsx
 import React, { useState } from 'react';
 import './CartPage.css'
 import { useCart } from '../Context/CartContext';
 import BuyModal from './BuyModal';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase/client';
+import OrderDetails from './OrderDetails';
+
 
 
 const CartPage = () => {
   const { cartItems, removeFromCart, clearCart, decrementQuantity, getTotalPrice } = useCart();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isOrderCompleted, setIsOrderCompleted] = useState(false);
+  const [orderDetails, setOrderDetails] = useState(null);
+  const [orderId, setOrderId] = useState(null);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -27,6 +31,10 @@ const CartPage = () => {
     decrementQuantity(productId);
   };
 
+  const closeOrder = () => {
+    setIsOrderCompleted(false)
+  };
+
   const handleBuy = (buyerInfo) => {
 
     const ordersCollection = collection(db, 'Ordenes');
@@ -41,6 +49,9 @@ const CartPage = () => {
     addDoc(ordersCollection, orderData)
       .then((docRef) => {
         console.log('Orden creada con ID:', docRef.id);
+        setOrderId(docRef.id);
+        setOrderDetails(orderData);
+        setIsOrderCompleted(true);
         clearCart();
       })
       .catch((error) => {
@@ -51,7 +62,7 @@ const CartPage = () => {
   return (
     <div className='cart'>
       
-      {!isModalOpen && (
+      {!isModalOpen && !isOrderCompleted && (
         <>
           <h2>Carrito de compras</h2>
           {cartItems.map((item) => (
@@ -82,6 +93,7 @@ const CartPage = () => {
         </>
       )}
 
+      {isOrderCompleted && orderDetails && <OrderDetails order={orderDetails} orderId={orderId} onClose={closeOrder}/>}
       {isModalOpen && <BuyModal  onClose={closeModal} onSubmit={handleBuy} />}
 
     </div>

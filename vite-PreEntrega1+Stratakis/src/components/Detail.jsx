@@ -1,4 +1,3 @@
-// Detail.jsx
 import React, { useState } from 'react';
 import './Detail.css';
 import Counter from './Counter';

@@ -1,4 +1,3 @@
-// CartWidget.jsx
 import React from 'react';
 import BotonImagen from '../assets/images/Cart.svg';
 import './CartWidget.css';
