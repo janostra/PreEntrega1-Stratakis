@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import './Item.css'
 import Detail from './Detail';
 
-const Item = ({id, title, price, description, category, image, setTotalQuantity})  => {
+const Item = ({id, title, price, description, category, image})  => {
     const [detalleVisible, setDetalleVisible] = useState(false);
 
     const mostrarDetalle = () => {
@@ -33,8 +33,6 @@ const Item = ({id, title, price, description, category, image, setTotalQuantity}
                      <Detail
                      producto={{ id, title, price, description, category, image }}
                      onClose={cerrarDetalle}
-
-                     setTotalQuantity={setTotalQuantity}
                    />
             )}
         </article>

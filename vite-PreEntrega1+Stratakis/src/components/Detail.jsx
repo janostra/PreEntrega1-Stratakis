@@ -1,13 +1,18 @@
+// Detail.jsx
 import React, { useState } from 'react';
-import './Detail.css'; // Importa tus estilos CSS para el Detalle (si es necesario)
+import './Detail.css';
+import Counter from './Counter';
+import { useCart } from '../Context/CartContext';
 
-const Detail = ({ producto, onClose, setTotalQuantity }) => {
-    const [count, setCount] = useState(0)
+const Detail = ({ producto, onClose}) => {
+  const { addToCart } = useCart();
+  const [count, setCount] = useState(0);
 
-    const handleAceptar = () => {
-        setTotalQuantity((prevQuantity) => prevQuantity + count);
-    };
-    
+  const handleAceptar = () => {
+    addToCart(producto, count);
+    onClose();
+  };
+
   return (
     <div className="popup">
       <div className="popup-inner">
@@ -15,15 +20,10 @@ const Detail = ({ producto, onClose, setTotalQuantity }) => {
         <img className='img' src={producto.image} alt={producto.title} />
         <p>Precio:${producto.price}</p>
         <p>{producto.description}</p>
-        <div>
-            <h3>Seleccione la cantidad de productos:</h3>
-            <h4>{count}</h4>
-            <button className="button" onClick={() => setCount(count + 1)}>+
-             </button>
-            <button className="button" onClick={() => setCount(count - 1)} disabled={count === 0}>-
-             </button>
-             <button className='button' onClick={handleAceptar}>Aceptar</button>
-      </div>
+
+        <Counter count={count} setCount={setCount} />
+
+        <button className='button' onClick={handleAceptar} disabled={count === 0}>Agregar al carrito</button>
         <button className='detail' onClick={onClose}>Cerrar Detalle</button>
       </div>
     </div>

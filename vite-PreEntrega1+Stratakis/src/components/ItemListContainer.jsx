@@ -1,28 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
+import { collection, getDocs, where, query } from 'firebase/firestore';
+import { db } from '../firebase/client.js'
 
 
-function ItemListContainer({ nombre, setTotalQuantity }) {
+function ItemListContainer({ nombre }) {
   const [productos, setProductos] = useState([]);
   const { categoryId } = useParams();
 
   useEffect(() => {
-    const obtenerProductos = async () => {
-      try {
-        // Reemplaza con la ruta correcta de tu archivo JSON
-        const response = await fetch('../../productos.json');
-        const data = await response.json();
+    const obtenerProductos = () => {
+      const productosref = collection(db, 'Productos');
 
-        // Filtra los productos por categoría si categoryId está presente
-        const productosFiltrados = categoryId
-          ? data.filter(producto => producto.category === categoryId)
-          : data;
+      let productosQuery;
 
-        setProductos(productosFiltrados);
-      } catch (error) {
-        console.error('Error al obtener productos:', error);
+      if (categoryId) {
+        const categoriaFiltrada = where('category', '==', categoryId);
+        productosQuery = query(productosref, categoriaFiltrada);
+      } else {
+        productosQuery = productosref;
       }
+
+      getDocs(productosQuery)
+        .then((snapchot) => {
+          if (snapchot.size === 0) {
+            console.log("no results");
+          }
+          setProductos(snapchot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+        })
+        .catch((error) => {
+          console.error('Error al obtener productos:', error);
+        });
     };
 
     obtenerProductos();
@@ -31,7 +40,7 @@ function ItemListContainer({ nombre, setTotalQuantity }) {
   return (
     <>
       <h2>Bienvenido, {nombre}</h2>
-      <ItemList productos={productos}  setTotalQuantity={setTotalQuantity} />
+      <ItemList productos={productos}/>
     </>
   );
 }
