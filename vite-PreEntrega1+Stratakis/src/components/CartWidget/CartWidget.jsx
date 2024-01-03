@@ -1,13 +1,13 @@
 import React from 'react';
-import BotonImagen from '../assets/images/Cart.svg';
+import BotonImagen from '../../assets/images/Cart.svg';
 import './CartWidget.css';
 import { useNavigate } from 'react-router-dom';
-import { useCart } from '../Context/CartContext';
+import { useCart } from '../../Context/CartContext';
 
 function CartWidget() {
-  const { cartItems } = useCart();
+  const { getTotalItems } = useCart();
   const navigate = useNavigate();
-  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const totalQuantity = getTotalItems();
 
   return (
     <button className='cart-button' onClick={() => navigate('/cart')}>

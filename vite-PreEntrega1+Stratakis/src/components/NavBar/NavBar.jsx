@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavBar.css'
+import CartWidget from '../CartWidget/CartWidget.jsx';
 
 function Navbar() {
  return (
@@ -14,7 +15,7 @@ function Navbar() {
           <NavLink className="navbar-button" to="/category/notebooks">Notebooks</NavLink>
         </ul>
       </nav>
-      
+      <CartWidget/>
     </>
     );
   }

@@ -1,18 +1,14 @@
-import { useState } from 'react';
 import './App.css';
 import {CartProvider} from "./Context/CartContext.jsx"
 import LogoEmpresa from "./assets/images/Logo.svg";
-import Navbar from './components/NavBar.jsx';
-import CartWidget from './components/CartWidget';
-import ItemListContainer from './components/ItemListContainer';
-import CartPage from './components/CartPage';
+import Navbar from './components//NavBar/NavBar.jsx';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
+import CartPage from './components/CartPage/CartPage.jsx';
+import ItemDetail from './components/ItemDetail/ItemDetail.jsx'
 import { Route, Routes, BrowserRouter as Router, Navigate } from 'react-router-dom';
 
 
 function App() {
-  const [mostrar, setMostrar] = useState(false);
-
-
 
   return (
     <Router>
@@ -25,15 +21,10 @@ function App() {
           </div>
           <div className="barra-vertical"></div>
           
-          {mostrar && <Navbar/>}
-          
-
-          <button className="button" onClick={() => setMostrar(!mostrar)}>
-            {mostrar ? "Ocultar ←" : "Desplegar →"}
-          </button>
+          <Navbar/>
           
           <div className="barra-vertical"></div>
-          <CartWidget/>
+
         </header> 
         <Routes>
           <Route
@@ -45,6 +36,7 @@ function App() {
             element={<ItemListContainer nombre="Jano"/>}
           />
           <Route path='/cart' element={<CartPage />} />
+          <Route path='/item/:id' element={<ItemDetail />} />
           <Route path='*' element={<Navigate to="/" />} />
         </Routes>
         <footer className='footer'>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemList from './ItemList';
+import ItemList from '../ItemList/ItemList.jsx';
 import { collection, getDocs, where, query } from 'firebase/firestore';
-import { db } from '../firebase/client.js'
+import { db } from '../../firebase/client.js'
 
 
 function ItemListContainer({ nombre }) {

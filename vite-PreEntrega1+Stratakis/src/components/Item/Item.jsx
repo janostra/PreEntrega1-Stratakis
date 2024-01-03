@@ -1,19 +1,14 @@
-import React, { useState} from 'react';
 import './Item.css'
-import Detail from './Detail';
+import ItemDetail from '../ItemDetail/ItemDetail';
+import { useNavigate } from 'react-router-dom';
 
 const Item = ({id, title, price, description, category, image})  => {
-    const [detalleVisible, setDetalleVisible] = useState(false);
+    const navigate = useNavigate();
 
     const mostrarDetalle = () => {
-        setDetalleVisible(true);
+        navigate(`/item/${id}`); 
       };
     
-    const cerrarDetalle = () => {
-       setDetalleVisible(false);
-    };
-
-
     return (
 
         <article className="card">
@@ -29,12 +24,7 @@ const Item = ({id, title, price, description, category, image})  => {
             <footer>
              <button className='detail-button' onClick={mostrarDetalle}>Detalle</button>
             </footer>
-            {detalleVisible && (
-                     <Detail
-                     producto={{ id, title, price, description, category, image }}
-                     onClose={cerrarDetalle}
-                   />
-            )}
+             <ItemDetail/>
         </article>
     )
 }

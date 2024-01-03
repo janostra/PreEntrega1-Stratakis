@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './CartPage.css'
-import { useCart } from '../Context/CartContext';
-import BuyModal from './BuyModal';
+import { useCart } from '../../Context/CartContext';
+import BuyModal from '../BuyModal/BuyModal';
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebase/client';
-import OrderDetails from './OrderDetails';
+import { db } from '../../firebase/client';
+import OrderDetails from '../OrderDetails/OrderDetails';
 
 
 
@@ -48,7 +48,6 @@ const CartPage = () => {
 
     addDoc(ordersCollection, orderData)
       .then((docRef) => {
-        console.log('Orden creada con ID:', docRef.id);
         setOrderId(docRef.id);
         setOrderDetails(orderData);
         setIsOrderCompleted(true);
